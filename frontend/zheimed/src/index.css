@@ -2,10 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.wavyBg{
-    background-image: url('./assets/dotbg.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat:  no-repeat;
-    z-index: -1;
-}

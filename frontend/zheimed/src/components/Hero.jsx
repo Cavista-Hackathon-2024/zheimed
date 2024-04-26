@@ -5,14 +5,14 @@ import { Navbar } from './Navbar'
 export const Hero = () => {
     return (
         <section className='bg-[#1B1818] relative z-10'>
-            <div className='wavyBg absolute w-full h-full '></div>
-            <section className=' pt-6 fixed w-full'>
+            <div className='absolute w-full h-full wavyBg '></div>
+            <section className='fixed w-full pt-6 '>
                 <Navbar />
             </section>
-            <div className="max-w-screen-xl items-center mx-auto min-h-screen justify-between px-4 py-32 gap-32 text-gray-600 overflow-hidden md:px-8 md:flex  ">
-                <div className='flex-none space-y-5 max-w-xl'>
+            <div className="items-center justify-between max-w-screen-xl min-h-screen gap-32 px-4 py-32 mx-auto overflow-hidden text-gray-600 md:px-8 md:flex ">
+                <div className='flex-none max-w-xl space-y-5'>
                     
-                    <h1 className="text-4xl text-white font-extrabold sm:text-5xl">
+                    <h1 className="text-4xl font-extrabold text-white sm:text-5xl">
                         An AI Model that detects <span className='text-[#389E5A]'>Alzheimer</span> disease
                     </h1>
                     <p className='text-white'>
