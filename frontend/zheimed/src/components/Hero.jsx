@@ -4,14 +4,14 @@ import HeroImg3 from '../assets/Heroimg3.svg'
 import { Navbar } from './Navbar'
 export const Hero = () => {
     return (
-        <section className='bg-gray-800'>
-        <div className="max-w-screen-xl items-center mx-auto px-4 py-28 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex ">
-            <div className='flex-none space-y-5 max-w-xl'>
+        <section className='bg-gray-800 min-h-screen'>
+        <div className="max-w-screen-xl items-center mx-auto px-4 py-10 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex justify-between ">
+            <div className='flex-none space-y-5 max-w-2xl'>
                 
                 <h1 className="text-4xl text-white font-extrabold sm:text-5xl">
                     Lorem ispum. Okay lorem ispum
                 </h1>
-                <p>
+                <p className='text-white'>
                     Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
                 </p>
                 <button

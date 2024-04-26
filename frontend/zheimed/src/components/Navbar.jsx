@@ -16,7 +16,7 @@ export const Navbar = () => {
         }
     ]
     return(
-        <nav className="bg-white border-b md:border-0 mx-10 rounded-lg  ">
+        <nav className="bg-white border-b md:border-0 mx-4 md:mx-10 rounded-lg --">
           <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8 justify-between">
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
                     <a href="javascript:void(0)">
