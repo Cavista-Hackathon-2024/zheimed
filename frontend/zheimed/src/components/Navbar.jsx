@@ -16,7 +16,7 @@ export const Navbar = () => {
         }
     ]
     return(
-        <nav className="bg-white border-b md:border-0 mx-10 rounded-lg  ">
+        <nav className="bg-white border-b md:border-0 mx-10 rounded-lg ">
           <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8 justify-between">
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
                     <a href="javascript:void(0)">
@@ -27,7 +27,7 @@ export const Navbar = () => {
                             alt=""
                         />
                     </a>
-                  <div className="md:hidden">
+                  <div className="md:hidden font-bold">
                       <button className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
                           onClick={() => setState(!state)}
                       >
@@ -50,7 +50,7 @@ export const Navbar = () => {
                       {
                           navigation.map((item, idx) => {
                               return (
-                                <li key={idx} className="text-gray-600 hover:text-indigo-600">
+                                <li key={idx} className="text-gray-600 hover:text-indigo-600 font-bold">
                                     <a href={item.path}>
                                         { item.title }
                                     </a>
