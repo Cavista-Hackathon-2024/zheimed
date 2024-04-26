@@ -23,7 +23,7 @@ export const Hero = () => {
                         Start here
                     </button>
                 </div>
-                <div className='flex-1 hidden md:block mt-6'>
+                <div className='flex-1 hidden md:block mt-10'>
                     <div className='flex gap-3'>
                     <div className='flex flex-col gap-2'>
                         <img src={HeroImg1} className='' alt="" />
