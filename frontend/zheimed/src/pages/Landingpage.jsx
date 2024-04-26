@@ -5,7 +5,8 @@ export const LandingPage = () => {
         <>
         <div>
             <Hero/>
-            <AboutSection/>
+            
         </div>
+        </>
     )
 }
