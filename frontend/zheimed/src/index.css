@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.wavyBg{
-    background-image: url('./assets/wavyBg.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat:  no-repeat;
-    z-index: -1;
+.aboutShape{
+    clip-path: polygon(49% 12%, 56% 0, 100% 0, 100% 85%, 60% 86%, 49% 100%, 0 100%, 0 12%);
 }
