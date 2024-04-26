@@ -1,5 +1,5 @@
 import logo from '../assets/logo.png'
-import { Link } from 'react-router-dom'
+import ArrowIcon from '../assets/Arrow Left.svg'
 import { useState } from 'react'
 
 export const Navbar = () => {
@@ -8,12 +8,13 @@ export const Navbar = () => {
     const navigation = [
         {
             title: 'About Us',
-            path: '/'
+            path: '/about'
         },
         {
-            title: 'Zhemied your health',
-            path: '/'
-        }
+            title: 'Services',
+            path: '/services'
+        },
+        
     ]
     return(
         <nav className="bg-white border-b md:border-0 mx-10 rounded-lg ">
@@ -50,7 +51,7 @@ export const Navbar = () => {
                       {
                           navigation.map((item, idx) => {
                               return (
-                                <li key={idx} className="text-gray-600 hover:text-indigo-600 font-bold">
+                                <li key={idx} className="text-[#8E98A8] hover:text-indigo-600 font-bold">
                                     <a href={item.path}>
                                         { item.title }
                                     </a>
@@ -58,7 +59,12 @@ export const Navbar = () => {
                               )
                           })
                       }
+                      <a href="/demo" className='flex gap-1.5'>
+                        <span className='font-bold text-[#389E5A]'>Demo Zheimed</span>
+                        <img src={ArrowIcon} alt="" />
+                    </a>
                   </ul>
+                  
               </div>
             
           </div>
