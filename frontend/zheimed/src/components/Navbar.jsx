@@ -1,5 +1,5 @@
 import logo from '../assets/logo.png'
-import { Link } from 'react-router-dom'
+import ArrowIcon from '../assets/Arrow Left.svg'
 import { useState } from 'react'
 
 export const Navbar = () => {
@@ -9,12 +9,13 @@ export const Navbar = () => {
         {
             title: 'About Us',
             
-            path: '/'
+            path: '/about'
         },
         {
-            title: 'Zhemied your health',
-            path: '/'
-        }
+            title: 'Services',
+            path: '/services'
+        },
+        
     ]
     return(
         <nav className="mx-10 bg-white border-b rounded-lg shadow-md md:border-0">
@@ -59,7 +60,12 @@ export const Navbar = () => {
                               )
                           })
                       }
+                      <a href="/demo" className='flex gap-1.5'>
+                        <span className='font-bold text-[#389E5A]'>Demo Zheimed</span>
+                        <img src={ArrowIcon} alt="" />
+                    </a>
                   </ul>
+                  
               </div>
             
           </div>
