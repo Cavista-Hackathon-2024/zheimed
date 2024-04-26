@@ -1,11 +1,9 @@
 import { Navbar } from "../components/Navbar"
-import { Hero } from "../components/Hero";
-import { AboutSection } from "../components/AboutSection";
+import { Hero } from "../components/Hero"
 export const LandingPage = () => {
     return (
-       
-        <div className="top-0">
-                <Navbar/>
+        <>
+        <div>
             <Hero/>
             <AboutSection/>
         </div>
