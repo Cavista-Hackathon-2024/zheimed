@@ -1,29 +1,19 @@
-import express from "express";
-import mongoose from "mongoose";
-import dotenv from "dotenv";
-import cors from "cors";
+import express from 'express';
+import dotenv from 'dotenv';
+import cors from 'cors';
+import index from './index.js';
+
+const PORT = process.env.PORT || 5000;
+const localhost = process.env.HOST || 'localhost';
 
 dotenv.config();
 const app = express();
 
 app.use(cors());
-app.use(express.json());    // To parse JSON data
+app.use(express.json());
 
-const PORT = process.env.PORT || 8000;
-const HOST = process.env.HOST
-
-// Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI, {
-	useNewUrlParser: true,
-	useUnifiedTopology: true,
-	useCreateIndex: true,
-});
-
-// Routes
-app.get("/", (req, res) => {
-	res.send("Hello World");
-});
+app.get('/', index);
 
 app.listen(PORT, () => {
-	console.log(`Server is running on port ${PORT} @ http://${HOST}:${PORT}`);
+	console.log(`Listening on PORT ${PORT} @ http://${localhost}:${PORT}`);
 });
