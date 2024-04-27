@@ -28,7 +28,7 @@ export const Hero = () => {
                     <div className='flex gap-3'>
                     <div className='flex flex-col gap-2'>
                         <img src={HeroImg1} className='' alt="" />
-                        <img src={HeroImg2} alt="" />
+                        <img src={HeroImg2} alt="" className='hidden' />
                     </div>
                     <div className='flex flex-col gap-12'>
                         <img className='invisible' src={HeroImg2} alt="" />
