@@ -15,7 +15,7 @@ const localhost = process.env.HOST;
 
 const upload = multer({ dest: 'uploads/' });
 
-app.post('/upload', upload.single('mriImage'), async (req, res) => {
+app.post('/analyze_mri_image', upload.single('mriImage'), async (req, res) => {
     try {
         // Read the uploaded image file
         const mriImageBuffer = req.file.buffer;
