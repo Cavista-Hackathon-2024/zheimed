@@ -9,19 +9,16 @@ export const Navbar = () => {
     const navigation = [
         {
             title: 'About Us',
-            path: '/'
+            path: '/#about'
         },
-        {
-            title: 'Services',
-            path: '/services'
-        },
+       
         
     ]
     return(
         <nav className="mx-10 bg-white border-b rounded-lg shadow-md md:border-0">
           <div className="items-center justify-between max-w-screen-xl px-4 mx-auto md:flex md:px-8">
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                    <a href="javascript:void(0)">
+                    <a href="/">
                         <img
                             src={logo}
                             width={120} 
@@ -62,7 +59,7 @@ export const Navbar = () => {
                       }
                       <Link to={`/demo`} >
   `                     <div className='flex items-center gap2'>
-                            <span className='font-bold text-[#389E5A]'>Demo Zheimed</span>
+                            <span className='font-bold text-[#389E5A]'>Demo Zhemied</span>
                             <img src={ArrowIcon} alt="" />
                        </div>`
                       </Link>
