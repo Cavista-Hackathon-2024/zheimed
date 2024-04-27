@@ -1,3 +1,9 @@
+# node_modules
 node_modules/
-backend/model/training_data/
+
+# training and test model datasets
+backend/model/train/
+backend/model/test/
+
+# text files
 *.txt
