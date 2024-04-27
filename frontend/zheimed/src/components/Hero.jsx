@@ -9,7 +9,7 @@ export const Hero = () => {
             <section className='fixed w-full pt-6 '>
                 <Navbar />
             </section>
-            <div className="items-center justify-between max-w-screen-xl min-h-screen gap-32 px-4 py-32 mx-auto overflow-hidden text-gray-600 md:px-8 md:flex ">
+            <div className="items-center justify-between max-w-screen-xl min-h-screen gap-32 px-10 py-32 mx-auto overflow-hidden text-gray-600 md:px-8 md:flex ">
                 <div className='flex-none max-w-xl space-y-5'>
                     
                     <h1 className="text-4xl font-extrabold text-white sm:text-5xl">
@@ -18,9 +18,7 @@ export const Hero = () => {
                     <p className='text-white'>
                         An AI powered model that utilizes advanced machine learning techniques to analyze MRI scans and identify early signs of Alzheimer's with high accuracy.
                     </p>
-                    <button
-                        className="w-1/2 px-6 py-3.5 text-white bg-[#389E5A] font-semibold rounded-lg duration-150 hover:bg-[#389E5A] active:shadow-lg"
-                    >
+                    <button className="w-1/2 px-6 py-3.5 text-white bg-[#389E5A] font-semibold rounded-lg duration-150 hover:bg-[#389E5A] active:shadow-lg">
                         Try demo
                     </button>
                 </div>

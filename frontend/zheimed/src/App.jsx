@@ -1,14 +1,16 @@
-import {Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { LandingPage } from './pages/Landingpage';
-import './index.css'
+import { DemoPage } from './pages/demopage';
+import './index.css';
 
 function App() {
   return (
-  <>
-    <Routes>
-      <Route index element={<LandingPage/>}/>
-    </Routes>
-  </>
+    <>
+      <Routes>
+          <Route path='/'  element={<LandingPage />}></Route>
+          <Route path="/demo" element={<DemoPage />}></Route>
+      </Routes>
+    </>
   )
 }
 
