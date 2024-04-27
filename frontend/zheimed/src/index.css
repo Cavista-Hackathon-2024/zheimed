@@ -16,3 +16,7 @@
     background-repeat: no-repeat;
     border-radius: 8px;
 }
+
+.hiddenSecond{
+    display: none;
+}

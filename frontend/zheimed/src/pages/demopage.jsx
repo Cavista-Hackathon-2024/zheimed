@@ -1,6 +1,7 @@
 import { Navbar } from "../components/Navbar"
 import DemoFooter from "../components/DemoFooter"
 import demoHealthIcon from '../assets/demoHealthIcon.svg'
+import { Link } from "react-router-dom"
 export const DemoPage = () => {
     return (
         <>
@@ -27,7 +28,9 @@ export const DemoPage = () => {
                 <div className="flex flex-col items-center justify-center gap-10 py-16">
                     <img src={demoHealthIcon} alt="" />
                     <div>
-                        <button className="text-white bg-[#389E5A] px-8 py-2 rounded-lg">Start Demo</button>
+                        <button className="text-white bg-[#389E5A] px-8 py-2 rounded-lg">
+                            <Link to={`/rundemo`}>Start Demo</Link>
+                        </button>
                     </div>
                 </div>
             </section>
