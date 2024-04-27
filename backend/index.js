@@ -3,11 +3,11 @@ import dotenv from 'dotenv';
 import multer from 'multer';
 import bodyParser from 'body-parser';
 import { GoogleGenerativeAI } from "@google/generative-ai";
+
 dotenv.config();
 
 const Router = express.Router();
-const upload = multer({ dest: 'uploads/' }); // Define the upload directory
-
+const upload = multer({ dest: 'uploads/' });
 
 const genAI = new GoogleGenerativeAI(process.env.API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-pro" });
@@ -31,9 +31,9 @@ Router.get('/', async (req, res) => {
     }
 });
 
-app.post('/generate', async (req, res) => {
+Router.post('/generate', async (req, res) => {
     try {
-        const userInput = req.body.userInput;
+        const userInput = req.body;
 
         // Generate answer using Generative AI based on user input
         const result = await model.generateContent(userInput);
