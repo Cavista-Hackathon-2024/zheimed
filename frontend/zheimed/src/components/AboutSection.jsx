@@ -1,7 +1,7 @@
 import AboutImg from '../assets/aboutUs.png';
 export const AboutSection = () => {
     return (
-    <div className='flex items-center justify-between p-32 aboutShape gap-9'>
+    <div id='about' className='flex items-center justify-between p-32 aboutShape gap-9'>
         <div>
             
             <div className='flex flex-col max-w-2xl gap-3'>

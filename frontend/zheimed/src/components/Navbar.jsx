@@ -9,12 +9,9 @@ export const Navbar = () => {
     const navigation = [
         {
             title: 'About Us',
-            path: '/'
+            path: '/#about'
         },
-        {
-            title: 'Services',
-            path: '/services'
-        },
+       
         
     ]
     return(
@@ -62,7 +59,7 @@ export const Navbar = () => {
                       }
                       <Link to={`/demo`} >
   `                     <div className='flex items-center gap2'>
-                            <span className='font-bold text-[#389E5A]'>Demo Zheimed</span>
+                            <span className='font-bold text-[#389E5A]'>Demo Zhemied</span>
                             <img src={ArrowIcon} alt="" />
                        </div>`
                       </Link>

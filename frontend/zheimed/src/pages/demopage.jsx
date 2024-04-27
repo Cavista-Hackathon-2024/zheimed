@@ -27,7 +27,7 @@ export const DemoPage = () => {
                 <div className="flex flex-col items-center justify-center gap-10 py-16">
                     <img src={demoHealthIcon} alt="" />
                     <div>
-                        <button className="text-white bg-[#389E5A] px-8 py-2 rounded-lg">Start Demo</button>
+                        <a href="/demo/console" className="text-white bg-[#389E5A] px-8 py-2 rounded-lg">Start Demo</a>
                     </div>
                 </div>
             </section>
