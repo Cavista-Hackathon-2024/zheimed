@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.dottedBg{
-    background-image: url('./assets/Frame\ 3.png');
+.heroBg{
+    background-image: url('./assets/Frame3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,4 +19,11 @@
 
 .hiddenSecond{
     display: none;
+}
+
+.illustration{
+    background-image: url('./assets/illustration.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
