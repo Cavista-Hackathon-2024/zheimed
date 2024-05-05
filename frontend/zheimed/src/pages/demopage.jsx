@@ -1,5 +1,5 @@
 import { Navbar } from "../components/Navbar"
-import DemoFooter from "../components/DemoFooter"
+import {Footer} from "../components/footer"
 import demoHealthIcon from '../assets/demoHealthIcon.svg'
 import { Link } from "react-router-dom"
 export const DemoPage = () => {
@@ -20,7 +20,7 @@ export const DemoPage = () => {
 
             {/*  */}
 
-            <section className="mt-8 ">
+            <section className="mt-8  illustration">
                 <div className="flex flex-col items-center justify-center gap-2 text-center ">
                     <h3 className="text-4xl font-bold">Let’s get started by understanding Demo Features!</h3>
                     <p className="w-[60%] text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam alias quaerat blanditiis at, odit accusamus iure. Expedita corporis numquam tenetur.</p>
@@ -36,7 +36,7 @@ export const DemoPage = () => {
             </section>
 
             <section>
-                <DemoFooter />
+                <Footer />
             </section>
         </>
     )
